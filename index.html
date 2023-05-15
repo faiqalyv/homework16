@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="/main.js"></script>
+  </head>
+  <body>
+
+    <div class="modal fade bd-example-modal-lg" id="cart-items-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" id="first-row-body">
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="two-row-body">Total Price: $0</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button">
+        <button class="b1" type="button" data-toggle="modal" data-target="#cart-items-modal"></button>
+        <button class="b2" type="button">Clear Cart</button>
+    </div>
+    <div class="container">
+      <div class="card1">
+        <img src="./23748be8-3ca2-45f8-aa39-4a573e0bbac5.jpeg" alt="" />
+        <h2>Orange</h2>
+        <p>Price $0.5</p>
+        <button type="button" class="add-to-cart" id="orange">Add to Cart</button>
+      </div>
+      <div class="card2">
+        <img src="./c297c030-9ae9-406b-87a2-c5875dabafaf.jpeg" alt="">
+        <h2>Banana</h2>
+        <p>Price $1.22</p>
+        <button type="button" class="add-to-cart" id="banana">Add to Cart</button>
+        </div>
+        <div class="card3">
+          <img src="./2d316af0-5cdb-4ead-a2be-e414f38e8063.jpeg" alt="">
+          <h2>Lemon</h2>
+          <p>Price $5</p>
+          <button type="button" class="add-to-cart" id="lemon">Add to Cart</button>
+        </div>
+    </div>
+    
+
+  </body>
+</html>
